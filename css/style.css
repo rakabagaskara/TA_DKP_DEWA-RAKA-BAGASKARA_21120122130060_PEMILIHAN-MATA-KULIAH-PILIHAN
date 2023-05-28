@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Sans Serif', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #0000FF;
+  padding: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-header {
+  width: 1024px;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+input[type="text"],
+input[type="date"] {
+  font-family: 'Sans Serif', sans-serif;
+  background: #f5f1ff;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-book {
+  margin: auto 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .list-item {
+    width: 90%;
+  }
+  .form {
+    width: 100%;
+  }
+}
